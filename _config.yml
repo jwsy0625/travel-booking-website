@@ -1,0 +1,5 @@
+site_name: Travel Booking Website
+theme: jekyll-theme-slate
+
+plugins:
+  - jekyll-seo-tag
