@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>여행 예약 웹사이트 - Travel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">✈️ TravelHub</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">홈</a></li>
+                    <li><a href="#prologue" class="nav-link">소개</a></li>
+                    <li><a href="#rooms" class="nav-link">객실</a></li>
+                    <li><a href="#location" class="nav-link">위치</a></li>
+                    <li><a href="#notice" class="nav-link">공지사항</a></li>
+                    <li><a href="#booking" class="nav-link">예약</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 홈 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">세계를 여행하세요</h1>
+            <p class="hero-subtitle">최고의 가격으로 최상의 여행 경험을 제공합니다</p>
+            <button class="cta-button" onclick="document.getElementById('booking').scrollIntoView({behavior: 'smooth'})">지금 예약하기</button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section id="prologue" class="prologue">
+        <div class="container">
+            <h2 class="section-title">TravelHub에 대해</h2>
+            <div class="prologue-content">
+                <div class="prologue-text">
+                    <h3>우리는 여행의 꿈을 현실로 만듭니다</h3>
+                    <p>20년 이상의 경험을 바탕으로 전 세계 고객들에게 최고의 여행 상품을 제공하고 있습니다. 저희와 함께 잊지 못할 추억을 만들어보세요.</p>
+                    <ul class="features">
+                        <li>✓ 24시간 고객 지원</li>
+                        <li>✓ 최저가 보장</li>
+                        <li>✓ 안전한 결제 시스템</li>
+                        <li>✓ 맞춤형 여행 패키지</li>
+                    </ul>
+                </div>
+                <div class="prologue-image">
+                    <img src="https://via.placeholder.com/400x300?text=Travel+Experience" alt="여행 경험">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 객실 섹션 -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2 class="section-title">객실 안내</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://via.placeholder.com/300x200?text=Standard+Room" alt="스탠다드">
+                    </div>
+                    <h3>스탠다드 룸</h3>
+                    <p class="price">₩150,000 / 박</p>
+                    <p class="description">편안한 침실, 욕실, 기본 편의시설이 갖춰진 객실</p>
+                    <ul class="amenities">
+                        <li>더블 침대</li>
+                        <li>에어컨</li>
+                        <li>무료 WiFi</li>
+                        <li>24시간 프론트</li>
+                    </ul>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://via.placeholder.com/300x200?text=Deluxe+Room" alt="디럭스">
+                    </div>
+                    <h3>디럭스 룸</h3>
+                    <p class="price">₩250,000 / 박</p>
+                    <p class="description">넓은 공간과 프리미엄 편의시설을 갖춘 객실</p>
+                    <ul class="amenities">
+                        <li>킹사이즈 침대</li>
+                        <li>욕조 & 샤워</li>
+                        <li>미니바</li>
+                        <li>업무용 책상</li>
+                    </ul>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://via.placeholder.com/300x200?text=Suite+Room" alt="스위트">
+                    </div>
+                    <h3>스위트 룸</h3>
+                    <p class="price">₩400,000 / 박</p>
+                    <p class="description">최고급 서비스와 럭셔리한 경험을 제공하는 객실</p>
+                    <ul class="amenities">
+                        <li>분리된 침실 & 거실</li>
+                        <li>재클루지 욕실</li>
+                        <li>로비 액세스</li>
+                        <li>개인 컨시어지</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 위치 섹션 -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">찾아오시는 길</h2>
+            <div class="location-content">
+                <div class="map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5235486283023!2d126.97796152346903!3d37.58768557204127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f2eef32fb9%3A0xe9e0f4e1e3e3e3e3!2sSeoul%20Central%20Station!5e0!3m2!1sko!2skr!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-info">
+                    <h3>TravelHub 본사</h3>
+                    <p><strong>주소:</strong> 서울시 중구 다동 100, 트래블 빌딩</p>
+                    <p><strong>전화:</strong> 02-1234-5678</p>
+                    <p><strong>이메일:</strong> info@travelhub.co.kr</p>
+                    <p><strong>운영시간:</strong> 평일 09:00 - 18:00, 주말 10:00 - 16:00</p>
+                    <p><strong>교통:</strong> 지하철 1호선 서울역 3번출구</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 공지사항 섹션 -->
+    <section id="notice" class="notice">
+        <div class="container">
+            <h2 class="section-title">공지사항</h2>
+            <div class="notice-list">
+                <div class="notice-item">
+                    <span class="notice-date">2026-09-01</span>
+                    <h4>2026년 9월 특가 프로모션 시작</h4>
+                    <p>모든 국내 패키지 20% 할인! 이번 기회를 놓치지 마세요.</p>
+                </div>
+                <div class="notice-item">
+                    <span class="notice-date">2026-08-25</span>
+                    <h4>신규 객실 오픈 안내</h4>
+                    <p>럭셔리 스위트 5개 객실이 새롭게 오픈했습니다. 조금 더 편안한 여행을 경험해보세요.</p>
+                </div>
+                <div class="notice-item">
+                    <span class="notice-date">2026-08-10</span>
+                    <h4>시스템 점검 안내</h4>
+                    <p>8월 15일 새벽 2시-4시 시스템 점검이 예정되어 있습니다. 예약은 정상 진행됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 예약 섹션 -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">예약하기</h2>
+            <form class="booking-form" onsubmit="handleBooking(event)">
+                <div class="form-group">
+                    <label for="name">이름 *</label>
+                    <input type="text" id="name" name="name" required placeholder="예약자 이름">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">전화번호 *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="010-0000-0000">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkIn">체크인 *</label>
+                        <input type="date" id="checkIn" name="checkIn" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkOut">체크아웃 *</label>
+                        <input type="date" id="checkOut" name="checkOut" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="roomType">객실 타입 *</label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="">선택하세요</option>
+                            <option value="standard">스탠다드 룸 (₩150,000)</option>
+                            <option value="deluxe">디럭스 룸 (₩250,000)</option>
+                            <option value="suite">스위트 룸 (₩400,000)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">투숙 인원 *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">선택하세요</option>
+                            <option value="1">1명</option>
+                            <option value="2">2명</option>
+                            <option value="3">3명</option>
+                            <option value="4">4명 이상</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialRequests">특별한 요청사항</label>
+                    <textarea id="specialRequests" name="specialRequests" placeholder="특별히 필요한 사항을 입력해주세요" rows="4"></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">개인정보 수집에 동의합니다</label>
+                </div>
+
+                <button type="submit" class="submit-button">예약 신청하기</button>
+            </form>
+            <div id="bookingMessage" class="booking-message"></div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TravelHub</h4>
+                    <p>세계 최고의 여행 서비스를 제공합니다</p>
+                </div>
+                <div class="footer-section">
+                    <h4>빠른 링크</h4>
+                    <ul>
+                        <li><a href="#home">홈</a></li>
+                        <li><a href="#rooms">객실</a></li>
+                        <li><a href="#booking">예약</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <p>전화: 02-1234-5678</p>
+                    <p>이메일: info@travelhub.co.kr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TravelHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
